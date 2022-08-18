@@ -1,0 +1,18 @@
+version: "3.2"
+services:
+    reportservice:
+        build:
+            context: .
+        container_name: ReportPdfService
+        ports:
+            - "5000:5000"
+        network_mode: "bridge"
+
+#        volumes:
+#                - "../../../Resources/ai-service/Models:/code/static/Data/Models"
+#                - "../../../Resources/ai-service/Cache:/code/static/Matching_Results_Cache"
+#                - "/etc/ssl/Compaira:/etc/Compaira"
+#                - "../../../logs/ai-service:/code/static/Logs"
+#                - "/var/www/html/uploads/cvfiles:/code/static/cvfiles"
+#                - "/var/www/html/uploads/jobspecs:/code/static/job_spec"
+        restart: unless-stopped

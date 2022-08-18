@@ -1,0 +1,8 @@
+numpy
+fpdf
+pillow
+matplotlib
+flask
+flask_cors
+requests
+pandas
